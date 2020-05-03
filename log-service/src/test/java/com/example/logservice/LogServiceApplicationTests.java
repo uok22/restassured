@@ -31,7 +31,7 @@ public class LogServiceApplicationTests {
     @Test
     public void loginTest() {
 
-        LoginRequestPayload loginRequestPayload = new LoginRequestPayload("123456-789", "Meitsi");
+        LoginRequestPayload loginRequestPayload = new LoginRequestPayload("123456-789S", "Meitsi");
 
         RestAssured
                 .given()
@@ -53,7 +53,7 @@ public class LogServiceApplicationTests {
 
     private SessionData doLogin() {
 
-        LoginRequestPayload loginRequestPayload = new LoginRequestPayload("060157-171W", "Meitsi");
+        LoginRequestPayload loginRequestPayload = new LoginRequestPayload("123456-789S", "Meitsi");
 
         RequestSpecification requestSpecification =
             RestAssured
